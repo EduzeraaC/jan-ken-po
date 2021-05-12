@@ -1,0 +1,84 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+
+#title {
+    color: #0984e3;
+    text-align: center;
+}
+
+#score {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#player, #bot {
+    position: relative;
+    flex-grow: 1;
+    border-radius: 5px;
+    width: 200px;
+    padding: 20px;
+    color: #fff;
+}
+
+#player {
+    background-color: #ff7675;
+}
+
+#bot {
+    background-color: #74b9ff;
+}
+
+#against {
+    font-size: 40px;
+    text-align: center;
+    width: 70px;
+}
+
+#player_name, #bot_name {
+    margin: 0;
+    padding: 0;
+}
+
+#player_name {
+    text-align: left;
+}
+
+#bot_name {
+    text-align: right;
+}
+
+#player_score, #bot_score {
+    position: absolute;
+    top: 8px;
+    font-size: 32px;
+}
+
+#player_score {
+    right: 20px;
+}
+
+ul#player_choice, ul#bot_choice {
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+ul#player_choice li, ul#bot_choice li {
+    display: inline;
+}
+
+ul#player_choice li a, ul#bot_choice li a {
+    opacity: .4;
+}
+
+ul#player_choice li a:hover, ul#player_choice li a.select, ul#bot_choice li a.select {
+    opacity: 1;
+}
+
+ul#player_choice li a img, ul#bot_choice li a img {
+    max-width: 80px;
+}
